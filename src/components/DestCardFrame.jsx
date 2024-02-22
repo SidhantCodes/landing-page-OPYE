@@ -3,7 +3,7 @@ import { useCallback } from "react"
 import DestinationCards from "./DestinationCards"
 import Image from 'next/image';
 import useEmblaCarousel from 'embla-carousel-react'
-
+import { fwdArrow, bkdArrow } from "../../public";
 const DestCardFrame = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({loop: true})
   const scrollPrev = useCallback(() => {    if (emblaApi) emblaApi.scrollPrev()  }, [emblaApi])
@@ -31,10 +31,10 @@ const DestCardFrame = () => {
       </div>
       <div className="flex gap-36 items-center justify-around">
         <button className="embla__prev" onClick={scrollPrev}>
-          <Image src="/back.png" height={20} width={20} />
+          <Image src={bkdArrow} height={20} width={20} />
         </button>
         <button className="embla__next" onClick={scrollNext}>
-        <Image src="/fwd.png" height={20} width={20} />
+        <Image src={fwdArrow} height={20} width={20} />
         </button>
       </div>
 
