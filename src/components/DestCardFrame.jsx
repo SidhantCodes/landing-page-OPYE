@@ -1,10 +1,11 @@
 "use client"
+import styles from "../styles/DestCardFrame.module.css"
 import { useCallback } from "react"
 import DestinationCards from "./DestinationCards"
 import Image from 'next/image';
 import useEmblaCarousel from 'embla-carousel-react'
 import { fwdArrow, bkdArrow } from "../../public";
-import { destination } from "@/assets/constants"; // import the destination array
+import { destination } from "@/assets/constants";
 
 const DestCardFrame = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({loop: true})
@@ -17,10 +18,10 @@ const DestCardFrame = () => {
         <DestinationCards key={index} imageUrl={dest.destImg} destinationName={dest.destName} locDescription={dest.destDesc} />
       ))}
     </div>
-    <div className="embla sm:hidden mt-16" ref={emblaRef}>
-      <div className="embla__container ">
+    <div className={`${styles.embla} sm:hidden mt-16`} ref={emblaRef}>
+      <div className={styles.embla__container}>
         {destination.map((dest, index) => (
-          <div key={index} className="embla__slide">
+          <div key={index} className={styles.embla__slide}>
             <DestinationCards imageUrl={dest.destImg} destinationName={dest.destName} locDescription={dest.destDesc} />
           </div>
         ))}
@@ -38,4 +39,4 @@ const DestCardFrame = () => {
   )
 }
 
-export default DestCardFrame
+export default DestCardFrame;

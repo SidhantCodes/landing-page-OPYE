@@ -1,0 +1,36 @@
+.home{
+  margin: 8.14vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head_text{
+  /* FONT FAMILY STORYBOOK NOT FOUND; NEED TO BE IMPORTED AND USED HERE */
+  font-family: 'Storybook';
+  font-style: normal;
+  line-height: 163.15%;
+  text-align: center;
+  color: #163247;
+}
+
+.sub_text{
+  /* FONT FAMILY GILROY NOT FOUND; NEED TO BE IMPORTED AND USED HERE */
+  font-style: normal;
+  text-align: center;
+  color: #163247;
+  margin: -30px 0 0 0;
+}
+
+.desc{
+  /* FONT FAMILY GILROY NOT FOUND; NEED TO BE IMPORTED AND USED HERE */
+  font-style: normal;
+  margin: 2vh 0;
+  text-align: center;
+  color: #163247;
+}
+
+.search{
+  display: flex;
+  margin: 10vh 0 0 0;
+}

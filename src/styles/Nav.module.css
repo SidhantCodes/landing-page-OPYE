@@ -1,0 +1,38 @@
+/* .navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 50px;
+  margin: 1.25vh 3vw;
+}
+.logo{
+  font-style: normal;
+  /*font-family: Storybook;
+  font-weight: 700;
+  font-size: 2vh;
+  line-height: 2.75vh;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #163247;
+  font-family: sans-serif;  /* Replace the text element with the logo
+
+
+}
+.navlink{
+  /* FONT FAMILY GILROY NOT FOUND; NEED TO BE IMPORTED AND USED HERE 
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.1vw;
+  line-height: 175.7%;
+  margin-left: 120px; /*harcoded the alignment for now, will need to be fixed after the actual logo is placed
+  color: #163247;
+  justify-items: center;
+  align-items: center;
+}
+
+
+.navlink ul{
+  display: flex;
+  column-gap: 6vw;
+} */

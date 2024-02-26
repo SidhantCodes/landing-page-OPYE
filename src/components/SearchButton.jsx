@@ -1,7 +1,8 @@
+import styles from "../styles/SearchButton.module.css"
 
 const SearchButton = () => {
   return (
-    <button className="searchdestbtn w-[200px]">
+    <button className={`${styles.searchdestbtn} w-[200px]`}>
       Search Destination
     </button>
   )
