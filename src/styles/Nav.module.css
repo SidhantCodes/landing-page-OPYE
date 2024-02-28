@@ -1,38 +1,67 @@
-/* .navbar{
+.navbar{
   display: flex;
-  justify-content: space-between;
+  padding: 1rem 1.5rem;
   align-items: center;
-  margin: 10px 50px;
-  margin: 1.25vh 3vw;
 }
-.logo{
-  font-style: normal;
-  /*font-family: Storybook;
+
+.navbarLogo{  /*Needs to be replaced later with the actual logo*/
   font-weight: 700;
-  font-size: 2vh;
-  line-height: 2.75vh;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: #163247;
-  font-family: sans-serif;  /* Replace the text element with the logo
-
-
 }
-.navlink{
-  /* FONT FAMILY GILROY NOT FOUND; NEED TO BE IMPORTED AND USED HERE 
-  font-family: sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 1.1vw;
-  line-height: 175.7%;
-  margin-left: 120px; /*harcoded the alignment for now, will need to be fixed after the actual logo is placed
-  color: #163247;
-  justify-items: center;
+
+.navItems{
+  flex-grow: 1;
+}
+
+.navItemsLi{
+  display: none;
   align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  color: #163247;
+}
+.popover{
+  display: flex; 
+  flex-grow: 1;
+  justify-content: flex-end; 
+  align-items: center; 
+}
+.popoverPanel {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  background-color: white;
+  padding: 0.5rem;
+  color: rgb(55, 65, 81);
 }
 
+.popoverPanel:hover {
+  color: rgb(31, 41, 55);
+}
 
-.navlink ul{
-  display: flex;
-  column-gap: 6vw;
+.popoverPanel:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px rgb(99, 102, 241);
+}
+/* .srOnly{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 } */
+
+@media (min-width: 640px){
+  .navItemsLi{
+    display: flex;
+  }
+  .popover{
+    display: none;
+  }
+}

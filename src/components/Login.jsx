@@ -1,7 +1,7 @@
 import styles from "../styles/Login.module.css"
 const Login = () => {
   return (
-    <button className={`${styles.login} px-2`}>
+    <button className={`${styles.login}`}>
       Log In
     </button>
   )

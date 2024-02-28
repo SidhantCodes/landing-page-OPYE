@@ -8,3 +8,9 @@
   color: #163247;
   margin-top: 6vh;
 }
+.carousel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5rem;
+}

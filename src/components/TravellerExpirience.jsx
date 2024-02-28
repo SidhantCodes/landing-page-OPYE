@@ -7,7 +7,7 @@ const TravellerExpirience = () => {
       <div className={`${styles.subHeadText}`}>
         Traveller’s Experiences
       </div>
-      <div>
+      <div className={`${styles.carousel}`}>
         <TravellerExpCaraousel />
       </div>
     </section>

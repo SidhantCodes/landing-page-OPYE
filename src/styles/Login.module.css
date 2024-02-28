@@ -6,6 +6,8 @@
   padding: 4px 25px;
   /* padding: 0.4vh 1.5vw; */
   transition: 0.5s;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .login:hover{
   background-color: #163247;

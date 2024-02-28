@@ -1,4 +1,4 @@
-.searchdestbtn{
+.searchDestBtn{
   margin: 0 1vw;
   background-color: #163247;
   color: #B4DCFA;
@@ -8,8 +8,9 @@
   padding: 0.7vh 1.7vw;
   transition: 0.5s;
   height: 2.5rem;
+  width: 200px;
 }
-.searchdestbtn:hover{
+.searchDestBtn:hover{
   background-color: #B4DCFA;
   color: #163247;
 }

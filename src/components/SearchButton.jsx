@@ -2,7 +2,7 @@ import styles from "../styles/SearchButton.module.css"
 
 const SearchButton = () => {
   return (
-    <button className={`${styles.searchdestbtn} w-[200px]`}>
+    <button className={`${styles.searchDestBtn}`}>
       Search Destination
     </button>
   )

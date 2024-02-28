@@ -1,4 +1,8 @@
-
+.destFrame{
+  display: none; 
+  margin-top: 4rem; 
+  column-gap: 2rem; 
+}
 .embla {
   overflow: hidden;
 
@@ -9,4 +13,20 @@
 .embla__slide {
   flex: 0 0 100%;
   min-width: 0;
+}
+.arrow{
+  display: flex;
+  gap: 9rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (min-width: 640px) { 
+  .destFrame{
+    display: flex;
+  }
+  .caraousel{
+    display: none;
+    margin-top: 24px;
+  }
 }

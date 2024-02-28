@@ -7,19 +7,19 @@ import { Fragment } from "react";
 import styles from "../styles/Nav.module.css"
 const Nav = () => {
   return (
-    <Popover className={`mx-auto flex items-center px-6 py-4`}>
-      <h1 className={`font-bold text-[#163247]`}>LOGO</h1>
-      <div className={`grow`}>
-        <div className={`hidden sm:flex items-center justify-center gap-12 text-[#163247]`}>
+    <Popover className={`${styles.navbar}`}>
+      <h1 className={`${styles.navbarLogo}`}>LOGO</h1>
+      <div className={`${styles.navItems}`}>
+        <div className={`${styles.navItemsLi}`}>
           <Link href="home">Home</Link>
           <Link href="packages">Packages</Link>
           <Link href="bookonline">Book Online</Link>
           <Link href="contactus">Contact Us</Link>
         </div>
       </div>
-      <div className={`flex grow items-center justify-end sm:hidden`}>
-        <Popover.Button className={`inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-700 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500`}>
-          <span className={`sr-only`}>Open Menu</span>
+      <div className={`${styles.popover}`}>
+        <Popover.Button className={`${styles.popoverPanel}`}>
+          {/* <span className={`${styles.srOnly}`}>Open Menu</span> */}
           <Bars3Icon className="h-6 w-6" aria-hidden="true"/>
         </Popover.Button>
       </div>
