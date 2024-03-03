@@ -1,4 +1,22 @@
 import { blore,pondi,kkl,pfp1,pfp2,pfp3,pfp4 } from "../../../public"
+export const navlinks = [
+  {
+    navItem : "Home",
+    navId : "home"
+  },
+  {
+    navItem : "Packages",
+    navId : "packages"
+  },
+  {
+    navItem : "Book Online",
+    navId : "bookOnline"
+  },
+  {
+    navItem : "Contact Us",
+    navId : "contactUs"
+  }
+]
 export const destination = [
   {
     destImg : blore,

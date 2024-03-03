@@ -5,21 +5,21 @@ import { Popover, Transition } from "@headlessui/react"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Fragment } from "react";
 import styles from "../styles/Nav.module.css"
+import { navlinks } from "@/assets/constants";
+
 const Nav = () => {
   return (
     <Popover className={`${styles.navbar}`}>
       <h1 className={`${styles.navbarLogo}`}>LOGO</h1>
       <div className={`${styles.navItems}`}>
         <div className={`${styles.navItemsLi}`}>
-          <Link href="home">Home</Link>
-          <Link href="packages">Packages</Link>
-          <Link href="bookonline">Book Online</Link>
-          <Link href="contactus">Contact Us</Link>
+          {navlinks.map((link) => (
+            <Link key={link.navId} href={link.navId}>{link.navItem}</Link>
+          ))}
         </div>
       </div>
       <div className={`${styles.popover}`}>
         <Popover.Button className={`${styles.popoverPanel}`}>
-          {/* <span className={`${styles.srOnly}`}>Open Menu</span> */}
           <Bars3Icon className="h-6 w-6" aria-hidden="true"/>
         </Popover.Button>
       </div>
@@ -42,10 +42,9 @@ const Nav = () => {
             </div>
             <div className={`mt-6`}>
               <nav className={`grid gap-y-8`}>
-                <Link href="home" className={`focus:outline-none focus: ring-2 focus: ring-inset focus:ring-gray-500`}>Home</Link>
-                <Link href="packages" className={`focus:outline-none focus: ring-2 focus: ring-inset focus:ring-gray-500`}>Packages</Link>
-                <Link href="bookonline" className={`focus:outline-none focus: ring-2 focus: ring-inset focus:ring-gray-500`}>Book Online</Link>
-                <Link href="contactus" className={`focus:outline-none focus: ring-2 focus: ring-inset focus:ring-gray-500`}>Contact Us</Link>
+                {navlinks.map((link) => (
+                  <Link key={link.navId} href={link.navId} className={`focus:outline-none`}>{link.navItem}</Link>
+                ))}
               </nav>
             </div>
             <div className={`mt-6 flex flex-col items-center gap-2`}>

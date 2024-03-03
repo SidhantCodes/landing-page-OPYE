@@ -45,18 +45,6 @@
   outline-offset: 2px;
   box-shadow: 0 0 0 2px rgb(99, 102, 241);
 }
-/* .srOnly{
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-} */
-
 @media (min-width: 640px){
   .navItemsLi{
     display: flex;
